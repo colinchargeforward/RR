@@ -40,6 +40,7 @@ avgsteps <- arrange(avgsteps,Interval)
 colnames(avgsteps) <- c('i','steps','interval')
 ggplot(avgsteps, aes(interval, steps)) + geom_line(color = "purple", size = 0.8) + labs(title = "Time Series Plot of the 5-minute Interval")
 ```
+
 ##Imputing missing values
 Total number of missing values in given dataset
 ```{r}
